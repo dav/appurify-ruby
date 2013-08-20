@@ -18,13 +18,14 @@ client = Appurify::Client.new(key, secret, options)
 
 ```
 device_types = client.device_types
+device_type_id = client.device_types.first["device_type_id"]
 ```
 
 ### Uploading An Application
 
 ```
 response = client.upload_app_from_url(app_url)
-application_id = response["id"]
+application_id = response["app_id"]
 ```
 
 ### Uploading A Test
@@ -32,13 +33,13 @@ application_id = response["id"]
 ```
 test_type = "uiautomation"
 response = client.upload_test_from_url(test_url, test_type)
-test_id = response["id"]
+test_id = response["test_id"]
 ```
 
 ### Starting A Test Run
 
 ```
-response = client.run_test(device_id, application_id, test_id)
+response = client.run_test(device_type_id, application_id, test_id)
 test_run_id = response["test_run_id"]
 ```
 
