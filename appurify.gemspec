@@ -4,11 +4,11 @@ require 'appurify/version'
 Gem::Specification.new do |gem|
   gem.name          = "appurify"
   gem.version       = Appurify::VERSION
-  gem.authors       = ["cisimple"]
-  gem.email         = %w(team@cisimple.com)
+  gem.authors       = ["Kevin Rohling"]
+  gem.email         = %w(support@appurify.com)
   gem.description   = %q{API client for Appurify}
   gem.summary       = %q{Run tests using Appurify's mobile devices.}
-  gem.homepage      = "https://github.com/cisimple-team/appurify"
+  gem.homepage      = "https://github.com/appurify/appurify-ruby"
 
   gem.files         = %x{ git ls-files }.split("\n").select{|d| d =~ %r{^(License|README|bin/|lib/)}}
   gem.test_files    = `git ls-files -- {spec,features}/*`.split("\n")
