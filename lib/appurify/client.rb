@@ -43,6 +43,16 @@ module Appurify
       get(url)
     end
     
+    def apps
+      url = build_url("apps", "list")
+      get(url)
+    end
+    
+    def tests
+      url = build_url("tests", "list")
+      get(url)
+    end
+    
     def upload_app_from_url(app_url)
       url = build_url("apps", "upload")
       data = {
