@@ -2,6 +2,10 @@
 
 The official Ruby client for the [Appurify](http://www.appurify.com) API.
 
+### Version History
+
+0.5.2 - Added support for uploading local application and test files.
+
 ### Installation
 
 ```
